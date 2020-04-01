@@ -21,10 +21,10 @@
                                        (face-background 'doom-modeline-bar)))
          (is-god-mode (bound-and-true-p god-local-mode))
          (next-cursor-type
-          (cond (buffer-read-only 'box)
+          (cond (buffer-read-only 'bar)
                 ((and overwrite-mode is-god-mode) 'hollow)
-                ((or is-god-mode overwrite-mode) 'box)
-                (t 'bar)))
+                ((or is-god-mode overwrite-mode) 'bar)
+                (t 'box)))
          (next-cursor-and-modeline-color
           (cond (buffer-read-only +god-read-only-mode-color)
                 (is-fill-overflow +god-fill-overflow-color)
