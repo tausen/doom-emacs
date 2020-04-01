@@ -474,8 +474,8 @@
         "C-c h" #'+ein/hydra/body)
 
       ;;; expand-region
-      "C-="  #'er/expand-region
-      "C--"  #'er/contract-region
+      ;; "C-="  #'er/expand-region
+      ;; "C--"  #'er/contract-region
 
       ;;; flycheck
       (:after flycheck
